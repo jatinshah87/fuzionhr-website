@@ -1,0 +1,5 @@
+﻿<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="20" fill="#FFF7F2"/>
+  <rect x="1" y="1" width="62" height="62" rx="19" stroke="#F3D5C4" stroke-width="2"/>
+  <ellipse cx='32' cy='20' rx='14' ry='6' fill='#FF9360'/><path d='M18 20V30C18 33.3 24.3 36 32 36C39.7 36 46 33.3 46 30V20' stroke='#1F1815' stroke-width='4'/><path d='M18 30V40C18 43.3 24.3 46 32 46C39.7 46 46 43.3 46 40V30' stroke='#1F1815' stroke-width='4'/><path d='M18 40V50C18 53.3 24.3 56 32 56C39.7 56 46 53.3 46 50V40' stroke='#1F1815' stroke-width='4'/>
+</svg>
