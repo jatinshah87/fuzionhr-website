@@ -1,55 +1,37 @@
-<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1100" height="760" viewBox="0 0 1100 760" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="line" x1="129" y1="300" x2="1070" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFB18C"/>
-      <stop offset="1" stop-color="#FF5A1F"/>
+    <linearGradient id="lifeBg" x1="84" y1="70" x2="996" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDFC"/>
+      <stop offset="1" stop-color="#FFF2E8"/>
     </linearGradient>
-    <linearGradient id="cardA" x1="76" y1="101" x2="314" y2="311" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF3EB"/>
-      <stop offset="1" stop-color="#FFD9C7"/>
-    </linearGradient>
-    <linearGradient id="cardB" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#FFF9F5"/>
-      <stop offset="1" stop-color="#FFEADD"/>
+    <linearGradient id="lifeAccent" x1="180" y1="240" x2="880" y2="492" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#FFCAA7"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="620" rx="40" fill="#FFF9F5"/>
-  <path d="M132 310H1070" stroke="url(#line)" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="150" cy="310" r="20" fill="#FF5A1F"/>
-  <circle cx="430" cy="310" r="20" fill="#FF7C42"/>
-  <circle cx="710" cy="310" r="20" fill="#FF9B63"/>
-  <circle cx="990" cy="310" r="20" fill="#FFB790"/>
-  <g>
-    <rect x="70" y="82" width="244" height="170" rx="30" fill="url(#cardA)"/>
-    <rect x="102" y="116" width="66" height="66" rx="22" fill="#1F1815"/>
-    <rect x="190" y="126" width="88" height="14" rx="7" fill="#2C231F"/>
-    <rect x="190" y="153" width="64" height="12" rx="6" fill="#8C7468"/>
-    <rect x="102" y="208" width="176" height="14" rx="7" fill="#F38A58"/>
-  </g>
-  <g>
-    <rect x="346" y="370" width="244" height="170" rx="30" fill="url(#cardB)"/>
-    <rect x="378" y="404" width="66" height="66" rx="22" fill="#FF5A1F"/>
-    <path d="M396 439L412 454L428 425" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <rect x="466" y="414" width="86" height="14" rx="7" fill="#2C231F"/>
-    <rect x="466" y="441" width="72" height="12" rx="6" fill="#8C7468"/>
-    <rect x="378" y="496" width="174" height="14" rx="7" fill="#F5B798"/>
-  </g>
-  <g>
-    <rect x="626" y="82" width="244" height="170" rx="30" fill="#1F1815"/>
-    <rect x="658" y="116" width="66" height="66" rx="22" fill="#FFF0E8"/>
-    <rect x="746" y="126" width="90" height="14" rx="7" fill="#FFF0E8"/>
-    <rect x="746" y="153" width="64" height="12" rx="6" fill="#B8A39A"/>
-    <rect x="658" y="208" width="178" height="14" rx="7" fill="#FF7C42"/>
-  </g>
-  <g>
-    <rect x="906" y="370" width="224" height="170" rx="30" fill="#FFF3EB"/>
-    <rect x="938" y="404" width="66" height="66" rx="22" fill="#FFB18C"/>
-    <rect x="1024" y="414" width="70" height="14" rx="7" fill="#2C231F"/>
-    <rect x="1024" y="441" width="56" height="12" rx="6" fill="#8C7468"/>
-    <rect x="938" y="496" width="156" height="14" rx="7" fill="#F38A58"/>
-  </g>
-  <text x="94" y="286" fill="#2C231F" font-family="Sora, Arial" font-size="28" font-weight="700">Hire</text>
-  <text x="364" y="352" fill="#2C231F" font-family="Sora, Arial" font-size="28" font-weight="700">Onboard</text>
-  <text x="652" y="286" fill="#FFF3EB" font-family="Sora, Arial" font-size="28" font-weight="700">Operate</text>
-  <text x="926" y="352" fill="#2C231F" font-family="Sora, Arial" font-size="28" font-weight="700">Retain & Exit</text>
+  <rect width="1100" height="760" rx="36" fill="url(#lifeBg)"/>
+  <rect x="60" y="60" width="980" height="640" rx="30" fill="#FFFFFF" stroke="#F2D6C4" stroke-width="2"/>
+  <text x="94" y="120" fill="#1F1815" font-family="Space Grotesk, Arial" font-size="18" font-weight="700">Connected employee journey</text>
+  <text x="94" y="170" fill="#1F1815" font-family="Space Grotesk, Arial" font-size="42" font-weight="700">From hire to exit, one platform stays in sync</text>
+  <path d="M148 404C218 314 324 270 432 286C514 298 564 356 650 370C742 384 814 344 918 262" stroke="url(#lifeAccent)" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="162" cy="390" r="16" fill="#FF5A1F"/>
+  <circle cx="356" cy="300" r="16" fill="#FF8E58"/>
+  <circle cx="548" cy="346" r="16" fill="#FFB286"/>
+  <circle cx="740" cy="368" r="16" fill="#FF8E58"/>
+  <circle cx="930" cy="250" r="16" fill="#FF5A1F"/>
+  <rect x="104" y="450" width="168" height="170" rx="28" fill="#1F1815"/>
+  <rect x="294" y="242" width="180" height="170" rx="28" fill="#FFF6F0" stroke="#F2D6C4" stroke-width="2"/>
+  <rect x="502" y="404" width="188" height="170" rx="28" fill="#FFF3EA"/>
+  <rect x="724" y="214" width="180" height="170" rx="28" fill="#1F1815"/>
+  <rect x="822" y="442" width="176" height="170" rx="28" fill="#FFF6F0" stroke="#F2D6C4" stroke-width="2"/>
+  <text x="132" y="494" fill="#FFFFFF" font-family="Space Grotesk, Arial" font-size="22" font-weight="700">1. Hire</text>
+  <text x="132" y="530" fill="#FFFFFF" font-family="Manrope, Arial" font-size="16" opacity="0.82">Recruitment pipelines, interview coordination and offer movement.</text>
+  <text x="324" y="286" fill="#1F1815" font-family="Space Grotesk, Arial" font-size="22" font-weight="700">2. Activate</text>
+  <text x="324" y="322" fill="#5F534C" font-family="Manrope, Arial" font-size="16">Onboarding, induction, access setup and early readiness workflows.</text>
+  <text x="534" y="448" fill="#1F1815" font-family="Space Grotesk, Arial" font-size="22" font-weight="700">3. Operate</text>
+  <text x="534" y="484" fill="#5F534C" font-family="Manrope, Arial" font-size="16">Core HR, leave, payroll, reimbursement and daily workforce administration.</text>
+  <text x="754" y="258" fill="#FFFFFF" font-family="Space Grotesk, Arial" font-size="22" font-weight="700">4. Grow</text>
+  <text x="754" y="294" fill="#FFFFFF" font-family="Manrope, Arial" font-size="16" opacity="0.82">Learning, probation and performance programs with better visibility.</text>
+  <text x="852" y="486" fill="#1F1815" font-family="Space Grotesk, Arial" font-size="22" font-weight="700">5. Exit</text>
+  <text x="852" y="522" fill="#5F534C" font-family="Manrope, Arial" font-size="16">Exit clearance, recovery, settlement and full-and-final closure.</text>
 </svg>
