@@ -1,0 +1,35 @@
+﻿<svg width="920" height="620" viewBox="0 0 920 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-reimbursement-management" x1="60" y1="40" x2="860" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B1715"/>
+      <stop offset="1" stop-color="#302621"/>
+    </linearGradient>
+    <linearGradient id="accent-reimbursement-management" x1="140" y1="110" x2="620" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9C6E"/>
+      <stop offset="1" stop-color="#FFC19E"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="620" rx="36" fill="url(#bg-reimbursement-management)"/>
+  <circle cx="744" cy="128" r="86" fill="#FF9C6E" fill-opacity="0.16"/>
+  <rect x="72" y="72" width="776" height="476" rx="30" fill="#FFF8F4"/>
+  <rect x="104" y="102" width="744" height="56" rx="18" fill="#FFFFFF"/>
+  <rect x="128" y="121" width="132" height="16" rx="8" fill="#211A17"/>
+  <rect x="112" y="192" width="314" height="304" rx="28" fill="url(#accent-reimbursement-management)"/>
+  <rect x="454" y="192" width="166" height="142" rx="24" fill="#221B18"/>
+  <rect x="644" y="192" width="166" height="142" rx="24" fill="#FFF0E7"/>
+  <rect x="454" y="354" width="356" height="142" rx="24" fill="#FFFFFF"/>
+  <rect x="144" y="226" width="112" height="12" rx="6" fill="white" fill-opacity="0.76"/>
+  <rect x="144" y="254" width="192" height="34" rx="14" fill="white"/>
+  <rect x="144" y="310" width="166" height="12" rx="6" fill="white" fill-opacity="0.6"/>
+  <rect x="144" y="336" width="138" height="12" rx="6" fill="white" fill-opacity="0.6"/>
+  <rect x="144" y="398" width="134" height="50" rx="18" fill="#1E1714" fill-opacity="0.15"/>
+  <text x="474" y="236" fill="#FFF0E7" font-family="Sora, Arial" font-size="16" font-weight="700">Expense claims</text>
+  <text x="474" y="266" fill="#B7A39A" font-family="Manrope, Arial" font-size="14">Reimbursement workflow panel</text>
+  <text x="664" y="236" fill="#1F1815" font-family="Sora, Arial" font-size="16" font-weight="700">Policy checks</text>
+  <text x="664" y="266" fill="#816B60" font-family="Manrope, Arial" font-size="14">Operational widget</text>
+  <rect x="486" y="392" width="122" height="12" rx="6" fill="#221B18" fill-opacity="0.34"/>
+  <rect x="486" y="426" width="220" height="44" rx="18" fill="#FFF3EC"/>
+  <text x="504" y="454" fill="#1F1815" font-family="Sora, Arial" font-size="18" font-weight="700">Faster settlements</text>
+  <rect x="72" y="566" width="250" height="12" rx="6" fill="#F4CBB7"/>
+  <rect x="340" y="566" width="174" height="12" rx="6" fill="#FF9C6E"/>
+</svg>
