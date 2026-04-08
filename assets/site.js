@@ -19,6 +19,18 @@ function withBase(base, path) {
   return `${base}${path}`;
 }
 
+function renderModulesMenu(base, page) {
+  return `
+    <div class="nav-item has-menu ${page === "modules" ? "active" : ""}">
+      <a href="${withBase(base, "modules.html")}" class="${page === "modules" ? "active" : ""}">Modules</a>
+      <button class="submenu-toggle" type="button" aria-label="Show FuzionHR modules" aria-expanded="false">&#9662;</button>
+      <div class="nav-dropdown" aria-label="Module navigation">
+        ${moduleLinks.map(([label, href]) => `<a href="${withBase(base, href)}">${label}</a>`).join("")}
+      </div>
+    </div>
+  `;
+}
+
 function renderHeader() {
   const body = document.body;
   const base = body.dataset.base || "./";
@@ -29,7 +41,6 @@ function renderHeader() {
   const navItems = [
     ["Home", "index.html", "home"],
     ["About Us", "about.html", "about"],
-    ["Modules", "modules.html", "modules"],
     ["Pricing", "pricing.html", "pricing"],
     ["Blogs", "blogs.html", "blogs"],
     ["HR Podcast", "podcast.html", "podcast"],
@@ -43,12 +54,16 @@ function renderHeader() {
         <img src="${withBase(base, "assets/images/logo-light.png")}" alt="FuzionHR logo on light background">
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        ${navItems.map(([label, href, key]) => `<a href="${withBase(base, href)}" class="${page === key ? "active" : ""}">${label}</a>`).join("")}
+        <a href="${withBase(base, "index.html")}" class="${page === "home" ? "active" : ""}">Home</a>
+        <a href="${withBase(base, "about.html")}" class="${page === "about" ? "active" : ""}">About Us</a>
+        ${renderModulesMenu(base, page)}
+        ${navItems.slice(2).map(([label, href, key]) => `<a href="${withBase(base, href)}" class="${page === key ? "active" : ""}">${label}</a>`).join("")}
       </nav>
       <div class="nav-actions">
-        <a class="btn btn-secondary" href="${withBase(base, "pricing.html")}">View Pricing</a>
-        <a class="btn btn-primary" href="${withBase(base, "contact.html")}">Book Demo</a>
-        <button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
+        <a class="text-link nav-text-link" href="${withBase(base, "pricing.html")}">Pricing</a>
+        <a class="btn btn-secondary" href="${withBase(base, "modules.html")}">View Modules</a>
+        <a class="btn btn-primary" href="${withBase(base, "contact.html")}">Schedule Demo</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu">&#9776;</button>
       </div>
     </div>
   `;
@@ -56,6 +71,16 @@ function renderHeader() {
   const toggle = header.querySelector(".menu-toggle");
   if (toggle) {
     toggle.addEventListener("click", () => header.classList.toggle("open"));
+  }
+
+  const submenuToggle = header.querySelector(".submenu-toggle");
+  const menuItem = header.querySelector(".nav-item.has-menu");
+  if (submenuToggle && menuItem) {
+    submenuToggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      const isOpen = menuItem.classList.toggle("submenu-open");
+      submenuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
   }
 }
 
@@ -71,7 +96,7 @@ function renderFooter() {
       <div class="footer-grid">
         <div>
           <img class="footer-logo" src="${withBase(base, "assets/images/logo-dark.png")}" alt="FuzionHR logo on dark background">
-          <p>FuzionHR is a strategic HRMS and payroll platform built for Indian businesses that want cleaner HR operations, better employee experience, and faster scale.</p>
+          <p>FuzionHR is a full-stack HRMS and payroll platform built for Indian businesses that want cleaner operations, better visibility and a stronger employee experience.</p>
           <div class="tag-list">
             <span class="tag">Core HR</span>
             <span class="tag">Payroll</span>
@@ -93,7 +118,7 @@ function renderFooter() {
         <div>
           <h3>Top Modules</h3>
           <div class="footer-links">
-            ${moduleLinks.slice(0, 7).map(([label, href]) => `<a href="${withBase(base, href)}">${label}</a>`).join("")}
+            ${moduleLinks.slice(0, 6).map(([label, href]) => `<a href="${withBase(base, href)}">${label}</a>`).join("")}
           </div>
         </div>
         <div>
@@ -109,7 +134,7 @@ function renderFooter() {
       </div>
       <div class="footer-bottom">
         <p>Copyright <span data-current-year></span> FuzionHR. All rights reserved.</p>
-        <p>Your strategic HR partner for modern workforce management.</p>
+        <p>Your strategic HR partner for modern workforce operations.</p>
       </div>
     </div>
   `;
