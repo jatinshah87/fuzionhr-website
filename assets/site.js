@@ -40,29 +40,32 @@ function renderHeader() {
 
   const navItems = [
     ["Home", "index.html", "home"],
-    ["About Us", "about.html", "about"],
+    ["About", "about.html", "about"],
     ["Pricing", "pricing.html", "pricing"],
     ["Blogs", "blogs.html", "blogs"],
-    ["HR Podcast", "podcast.html", "podcast"],
-    ["Contact Us", "contact.html", "contact"]
+    ["Podcast", "podcast.html", "podcast"],
+    ["Contact", "contact.html", "contact"]
   ];
 
   header.className = "site-header";
   header.innerHTML = `
     <div class="container nav-shell">
       <a class="brand" href="${withBase(base, "index.html")}" aria-label="FuzionHR home">
-        <img src="${withBase(base, "assets/images/logo-light.png")}" alt="FuzionHR logo on light background">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <strong>FuzionHR</strong>
+          <span>Your strategic HR partner</span>
+        </span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="${withBase(base, "index.html")}" class="${page === "home" ? "active" : ""}">Home</a>
-        <a href="${withBase(base, "about.html")}" class="${page === "about" ? "active" : ""}">About Us</a>
+        <a href="${withBase(base, "about.html")}" class="${page === "about" ? "active" : ""}">About</a>
         ${renderModulesMenu(base, page)}
         ${navItems.slice(2).map(([label, href, key]) => `<a href="${withBase(base, href)}" class="${page === key ? "active" : ""}">${label}</a>`).join("")}
       </nav>
       <div class="nav-actions">
-        <a class="text-link nav-text-link" href="${withBase(base, "pricing.html")}">Pricing</a>
-        <a class="btn btn-secondary" href="${withBase(base, "modules.html")}">View Modules</a>
-        <a class="btn btn-primary" href="${withBase(base, "contact.html")}">Schedule Demo</a>
+        <a class="btn btn-secondary" href="${withBase(base, "modules.html")}">Explore Modules</a>
+        <a class="btn btn-primary" href="${withBase(base, "contact.html")}">Book Demo</a>
         <button class="menu-toggle" type="button" aria-label="Toggle menu">&#9776;</button>
       </div>
     </div>
