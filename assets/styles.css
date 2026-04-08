@@ -50,9 +50,9 @@ h1, h2, h3, h4 {
   letter-spacing: -0.03em;
   color: var(--text);
 }
-h1 { font-size: clamp(2.6rem, 5vw, 4.7rem); }
-h2 { font-size: clamp(2rem, 3vw, 3rem); }
-h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
+h1 { font-size: clamp(2.35rem, 4.4vw, 3.95rem); }
+h2 { font-size: clamp(1.8rem, 2.8vw, 2.7rem); }
+h3 { font-size: clamp(1.08rem, 1.7vw, 1.35rem); }
 p {
   margin: 0 0 16px;
   color: var(--muted);
@@ -143,24 +143,51 @@ li:last-child { margin-bottom: 0; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 84px;
-  gap: 20px;
+  min-height: 74px;
+  gap: 18px;
 }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   min-width: 0;
 }
-.brand img { width: 210px; height: auto; }
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 18px;
+  background-image: url("images/logo-light.png");
+  background-repeat: no-repeat;
+  background-size: auto 52px;
+  background-position: left center;
+  box-shadow: 0 10px 24px rgba(31, 18, 10, 0.08);
+}
+.brand-copy {
+  display: grid;
+  gap: 2px;
+}
+.brand-copy strong {
+  font-family: "Syne", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1;
+  color: var(--text);
+}
+.brand-copy span {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--muted-soft);
+  letter-spacing: 0.01em;
+}
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
 }
 .nav-links a {
   color: var(--muted);
   font-weight: 700;
+  font-size: 0.98rem;
 }
 .nav-links a.active,
 .nav-links a:hover { color: var(--text); }
@@ -229,7 +256,7 @@ li:last-child { margin-bottom: 0; }
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 .menu-toggle {
   display: none;
@@ -1394,7 +1421,6 @@ th {
   }
   .nav-links,
   .nav-actions .btn-secondary { display: none; }
-  .nav-actions .nav-text-link { display: none; }
   .menu-toggle { display: inline-flex; }
   .site-header.open .nav-shell {
     align-items: flex-start;
@@ -1488,7 +1514,18 @@ th {
   .podcast-card,
   .blog-card { padding: 22px; }
   .page-hero-card h1 { max-width: none; }
-  .brand img,
+  .brand-mark {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    background-size: auto 46px;
+  }
+  .brand-copy strong {
+    font-size: 1.15rem;
+  }
+  .brand-copy span {
+    font-size: 0.72rem;
+  }
   .footer-logo { width: 180px; }
   .footer-bottom,
   .section-head {
